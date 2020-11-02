@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 2rem;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(37, 37, 37);
+    padding: 5rem 0;
+}
+
+section h1{
+    color: rgba(255, 255, 255, 0.322);
+    text-align: center;
+    font-size: 5rem;
+}
+
+section p{
+    color: rgba(255, 255, 255, 0.322);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.container{
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+button{
+    margin-left: 40%;
+    margin-bottom: 3rem;
+    height: 10rem;
+    width: 10rem;
+    background-color: red;
+    border-radius: 50%;
+    border: none;
+    /*animation: buzz 500ms infinite;*/
+}
+
+button:focus{
+    outline: none;
+}
+
+.texts .hello{
+    color: black;
+    text-align: left;
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+
+}
+
+.texts .notes{
+    
+    color: black;
+    text-align: left;
+    background-color: white;
+    padding: 1rem;
+    width: 100%;
+    min-height: 10rem;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+
+}
+.word{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.reply{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    background-color: purple;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes buzz{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.05);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
